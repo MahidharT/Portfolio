@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahidhar Tirukkoveluru - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar (Bootstrap Component) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mahidhar<span class="text-primary">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 text-center mb-5 mb-lg-0">
+                    <img src="avatar.png" alt="Mahidhar Avatar" class="img-fluid avatar-img hero-img-anim">
+                </div>
+                <div class="col-lg-6 order-lg-1 hero-text-anim">
+                    <h2 class="text-secondary fw-bold">Hello, I'm</h2>
+                    <h1 class="display-4 fw-bold text-gradient">Mahidhar Tirukkoveluru</h1>
+                    <p class="lead mt-3 bio-text">
+                        A 3rd Year B.E. Electronics and Communication Engineering student at Vasavi College of Engineering. I have hands-on expertise in RTOS (QNX), embedded systems, and machine learning architectures. When I'm not coding or building hardware, you'll find me playing badminton or reading fiction books!
+                    </p>
+                    <a href="#contact" class="btn btn-primary btn-lg mt-4 custom-btn">Let's Connect</a>
+                    <a href="https://github.com/MahidharT" target="_blank" class="btn btn-outline-light btn-lg mt-4 ms-2">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Bootstrap Grid & Cards) -->
+    <section id="projects" class="py-5 bg-darker">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">My Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white custom-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">RTOS Thermal Gradient Simulator</h5>
+                            <p class="card-text">Developed a real-time thermal simulator by efficiently solving the 2D heat equation utilizing the QNX microkernel architecture and implemented robust client-server IPC logic.</p>
+                            <small class="text-muted">QNX, C/C++, Client-Server IPC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white custom-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Solar Flare Prediction Model</h5>
+                            <p class="card-text">Selected for the ISRO 2025 basket; led development on a predictive forecasting model for solar flares utilizing LSTM machine learning networks and physics-based modeling data.</p>
+                            <small class="text-muted">Python, LSTM, Physics Modeling</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white custom-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Wireless Ultrasonic Radar</h5>
+                            <p class="card-text">Engineered an active system to measure the distance and direction of approaching objects. Designed the detection loop specifically to avoid collisions, optimizing it for safety.</p>
+                            <small class="text-muted">RF Transceiver, Sensors</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-dark text-white custom-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Antenna & Signal Filtering Analysis</h5>
+                            <p class="card-text">Designed and simulated a microstrip patch antenna using Ansys HFSS. Developed a high-efficiency noise reduction filter utilizing Kalman Filtering in MATLAB to ensure signal stability.</p>
+                            <small class="text-muted">Ansys, MATLAB, Kalman Filter</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0 d-flex flex-column justify-content-center">
+                    <div class="mb-4">
+                        <h4 class="text-primary mb-2">Email</h4>
+                        <p class="text-light mb-0"><a href="mailto:mahi.tirukkoveluru@gmail.com" class="text-light text-decoration-none">mahi.tirukkoveluru@gmail.com</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-primary mb-2">Phone</h4>
+                        <p class="text-light mb-0">+91 9949825522</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-primary mb-2">Social</h4>
+                        <a href="https://github.com/MahidharT" target="_blank" class="text-light text-decoration-none">GitHub Profile</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form id="contactForm" class="contact-form p-4 rounded-4 shadow-lg">
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label text-light">Full Name</label>
+                            <input type="text" class="form-control bg-dark text-light border-secondary" id="nameInput" placeholder="Your Name">
+                            <div class="invalid-feedback">Please provide a valid name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label text-light">Email address</label>
+                            <input type="email" class="form-control bg-dark text-light border-secondary" id="emailInput" placeholder="name@example.com">
+                            <div class="invalid-feedback">Please provide a valid email.</div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="messageInput" class="form-label text-light">Message</label>
+                            <textarea class="form-control bg-dark text-light border-secondary" id="messageInput" rows="4" placeholder="Your message here..."></textarea>
+                            <div class="invalid-feedback">Message cannot be empty.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 custom-btn">Send Message</button>
+                        <div id="successMessage" class="mt-3 text-success d-none text-center fw-bold">Message sent successfully!</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center py-4">
+        <p class="mb-0 text-secondary">&copy; 2026 Mahidhar Tirukkoveluru. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
